@@ -1,0 +1,138 @@
+body {
+    width: 400px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2 {
+    margin: 0;
+    color: #333;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#searchInput {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.domain-filter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cookie-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.cookie-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    gap: 10px;
+}
+
+.cookie-item:last-child {
+    border-bottom: none;
+}
+
+.cookie-item:hover {
+    background-color: #f5f5f5;
+}
+
+.cookie-info {
+    flex: 1;
+    overflow: hidden;
+}
+
+.cookie-name {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.cookie-domain {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+button.primary {
+    background-color: #2196F3;
+    color: white;
+}
+
+button.primary:hover {
+    background-color: #1976D2;
+}
+
+button.secondary {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+button.secondary:hover {
+    background-color: #e0e0e0;
+}
+
+.status {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    display: none;
+}
+
+.status.show {
+    display: block;
+}
+
+.status.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.status.error {
+    background-color: #f44336;
+    color: white;
+}
